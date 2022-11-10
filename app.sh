@@ -14,9 +14,9 @@ do
 
     if [ $STATUS -eq $? ]
     then
-        echo "$USER" "------" "$LINE" "------" "Success" "------" `date +%Y%m%d%H%M` "------" "$TIME">> output.txt
+        echo "$USER" "------" "$LINE" "------" "Success" "------" `date +%Y%m%d%H%M` "------" "$TIME">> output.log
     else
-        echo "$USER" "------" "$LINE" "------" "Failed" "------" `date +%Y%m%d%H%M`  >> output.txt
+        echo "$USER" "------" "$LINE" "------" "Failed" "------" `date +%Y%m%d%H%M`  >> output.log
     fi
 
 done
